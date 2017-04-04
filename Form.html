@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta  charset="utf-8"/>
+    <title></title>
+    <style>
+        form{
+            width:500px;
+            margin:auto;
+        }
+        fieldset{
+            width:500px;
+            border:1px solid #83cbfb;
+            border-radius:20px;
+            margin:15px;
+        }
+        em{
+            color:red;
+        }
+        legend{
+            color:#bb61fa;
+        }
+        .st1{
+            width:400px;
+            border-bottom:1px solid #0094ff;
+            margin:10px;
+            padding:10px;
+        }
+        .sub{
+            width:400px;
+            margin:10px;
+            text-align:center;
+        }
+        .tr{
+            width:70px;
+            text-align:right;
+            float:left;
+            padding:4px;
+        }
+        textarea{
+            resize:none;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="get" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Information 1<em>(Need)</em></legend>
+            <div class="st1">
+                <label class="tr" for="account">name:</label>
+                <input type="text" id="account" name="account" placeholder="Guest" size="10" autofocus autocomplete="off" />
+            </div>
+            <div class="st1">
+                <label class="tr" for="pwd">password:</label>
+                <input type="password" id="pwd" name="pwd" size="10" placeholder="Password" autocomplete="off" />
+            </div>
+            <div class="st1">
+                <label class="tr">Sex:</label>
+                <input type="radio" name="gender" value="male" id="male" /><label for="male">Male</label>
+                <input type="radio" name="gender" value="female" id="female"/><label for="female">Female</label>
+            </div>
+            <div class="st1">
+                <label class="tr">ID:</label>
+                <input type="text" name="id1" pattern="[a-zA-Z]{1}[1-2]{1}\d{8}" />
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Information 2</legend>
+            <div class="st1">
+                <label class="tr">Address:</label>
+                <select name="add1" >
+                    <option value="TPE">TPE</option>
+                    <option value="TPH">TPH</option>
+                    <option value="TYC">TYC</option>
+                    <option value="HSC">HSC</option>
+                </select>
+            </div>
+            <div class="st1">
+            <label class="tr">Address:</label>
+                <input type="text" name="add2" size="30"/>
+            </div>
+            <div class="st1">
+                <label class="tr">E-mail:</label>
+                <input type="email" name="email1" />
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Information 3</legend>
+            <div class="st1">
+                <label class="tr">Hoppe:</label>
+                <input type="checkbox" name="hobby" value="music" id="music"/><label for="music">Music</label> 
+                <input type="checkbox" name="hobby" value="sport" id="sport" /><label for="sport">Sport</label>
+                <input type="checkbox" name="hobby" value="reding" id="reding" /><label for="reding">Reding</label>
+                <input type="checkbox" name="hobby" value="sport" id="movie" /><label for="movie">Movie</label>
+            </div>
+            <div class="st1">
+                <label class="tr">File:</label>
+                <input type="file" name="file1" multiple/>
+            </div>
+            <div class="st1">
+                <label class="tr">Homepage:</label>
+                <input type="url" name="hp" list="hpurls" />
+                <datalist id="hpurls">
+                    <option value="http://tw.yahoo.com"></option>
+                    <option value="http://www.google.com.tw"></option>
+                    <option value="http://www.facebook.com.tw"></option>
+                </datalist>
+            </div>
+            <div class="st1">
+                <label class="tr" for="memo">opinion: </label>
+                <textarea cols="40" rows="5" id="memo" name="memo"></textarea>
+            </div>
+        </fieldset>
+        <div class="sub">
+        <input type="submit" value="confirm" />
+        <input type="reset" value="Clear" />
+        </div>
+    </form>
+    <form action="#" method="get">
+        <input type="date" name="date1" />
+        <hr />
+        <input type="datetime-local" name="date2" />
+        <hr />
+        <input type="month" name="month1" />
+        <hr />
+        <input type="time" name="time1" />
+        <hr />
+        <input type="week" name="week1" />
+        <hr />
+        <input type="url" name="url1" />
+        <hr />
+        <input type="color" name="color1" />
+        <hr />
+        <input type="range" name="range1" min="0" max="5" value="0"/>
+        <hr />
+        <input type="number" name="number1" min="0" max="20" />
+        <hr />
+        <input type="submit" value="confirm" />
+    </form>
+</body>
+</html>
