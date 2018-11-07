@@ -7,8 +7,7 @@ namespace AUO.SmartCaring.Model.Core
         public static string GetConnectionString()
         {
             //TODO: 需改為讀取appsettings.json
-            //return "Server=10.86.10.201;database=smartcaring;uid=scadmin;pwd=sc@aitba2;SslMode=None;Charset=utf8;";
-            return "Server=10.250.12.4;database=schr;uid=scadmin;pwd=sc@aitba2;SslMode=None;Charset=utf8;";
+            return "Server=IP;database=XXX;uid=SSS;pwd=XXX;SslMode=None;Charset=utf8;";
         }
 
         public static string GetStringWithWhiteSpace(this string orgStr, int whiteSpaceCount)
